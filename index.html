@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk Toko Online</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .product-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin-right: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            max-width: 100%;
+            min-width: 280px;
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.3s, opacity 0.3s;
+        }
+
+        .product-card:hover {
+            transform: scale(1.02);
+            opacity: 0.95;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 0% 0% 10% ;
+        }
+
+        .product-info {
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        .product-info h2 {
+            margin: 0;
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        .price {
+            font-size: 1.2em;
+            color: #e63946;
+            margin: 10px 0;
+        }
+
+        .discount {
+            font-size: 1em;
+            color: #888;
+            text-decoration: line-through;
+        }
+
+        .discount-tag {
+            display: inline-block;
+            background: #ff6f61;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            font-weight: bold;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .location,
+        .rating,
+        .sold {
+            font-size: 0.9em;
+            color: #555;
+            margin: 5px 0;
+        }
+
+        .rating::before {
+            content: "⭐";
+            color: #ffcc00;
+            margin-right: 5px;
+        }
+
+        .sold::before {
+            content: "Sold: ";
+            font-weight: bold;
+        }
+
+        .location::before {
+            content: "📍 ";
+        }
+
+        .product-card button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .product-card button:hover {
+            background-color: #2f70b5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="product-card">
+        <div class="discount-tag">41% OFF</div>
+        <img src="img/lips1.jpg">
+        <div class="product-info">
+            <h2>Gogo Tales Cloud Sensation Double Spell Lip Cream</h2>
+            <div class="price">Rp 44.000 </div>
+            <div class="discount">Rp 75.000</div>
+            <div class="discount-tag">Diskon 41%</div>
+            <div class="location">Kota Jakarta</div>
+            <div class="rating">5.0</div>
+            <div class="sold">50.8rb+ Terjual</div>
+            <button>Belanja Sekarang</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="discount-tag">27% OFF</div>
+        <img src="img/lips2.jpg">
+        <div class="product-info">
+            <h2>Gogotales Dance Little Pink Ball Moisturizing Lip Glaze</h2>
+            <div class="price">Rp 55.000</div>
+            <div class="discount">Rp 75.000</div>
+            <div class="discount-tag">Diskon 27%</div>
+            <div class="location">Kota Jakarta</div>
+            <div class="rating">4.9</div>
+            <div class="sold">41.7rb+ Terjual</div>
+            <button>Belanja Sekarang</button>
+        </div>
+    </div>
+</body>
+</html>
